@@ -9,7 +9,7 @@ from typing import List, Dict, Any, Generator
 from groq import Groq
 
 # ── Configuration ─────────────────────────────────────────────────────────────
-GROQ_API_KEY  = os.getenv("GROQ_API_KEY", "votre_clé_groq_ici")
+os.environ["GROQ_API_KEY"] = "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" 
 GROQ_MODEL    = "llama-3.3-70b-versatile"  # modèle gratuit Groq
 MAX_TOKENS    = 1024
 TEMPERATURE   = 0.2   # faible pour des réponses factuelles ancrées
